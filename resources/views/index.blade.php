@@ -195,6 +195,178 @@
         </div>
     </section>
 
+    <!-- Experience Section -->
+    <section 
+        id="experience" 
+        class="py-24 bg-zinc-900/20"
+        x-data="{ visible: false }"
+        x-intersect.margin.-100px="visible = true"
+    >
+        <div 
+            class="container mx-auto px-6 transition-all duration-1000 transform"
+            :class="visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'"
+        >
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-16 text-center outfit">Work Experience</h2>
+                
+                <div class="space-y-8">
+                    <!-- XALA PREMIUM -->
+                    <div class="glass p-6 rounded-2xl border border-zinc-800/50 hover:border-zinc-700 transition-all">
+                        <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-1">Full-stack Developer</h3>
+                                <p class="text-indigo-400 font-medium">XALA PREMIUM | Book Luxury Hotels | Boardrooms | Event Hall</p>
+                            </div>
+                            <div class="text-sm text-zinc-500 mt-2 md:mt-0 md:text-right">
+                                <div>Nov 2025 - Present</div>
+                                <div>Part-time · Remote</div>
+                                <div class="text-zinc-600">Abuja, Federal Capital Territory, Nigeria</div>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">Full-Stack Development</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">Laravel</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">React.js</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">Cursor AI</span>
+                        </div>
+                    </div>
+
+                    <!-- DoctorOnTap -->
+                    <div class="glass p-6 rounded-2xl border border-zinc-800/50 hover:border-zinc-700 transition-all">
+                        <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-1">Full-stack Developer</h3>
+                                <p class="text-indigo-400 font-medium">DoctorOnTap | Consult A Doctor | Hire A Caregiver</p>
+                            </div>
+                            <div class="text-sm text-zinc-500 mt-2 md:mt-0 md:text-right">
+                                <div>Jul 2025 - Present</div>
+                                <div>Full-time · Hybrid</div>
+                                <div class="text-zinc-600">Federal Capital Territory, Nigeria</div>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">API Development</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">Back-End Web Development</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">Full-Stack Development</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">Linux</span>
+                        </div>
+                    </div>
+
+                    <!-- Wired Banking Africa -->
+                    <div class="glass p-6 rounded-2xl border border-zinc-800/50 hover:border-zinc-700 transition-all">
+                        <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-1">Back End Developer</h3>
+                                <p class="text-indigo-400 font-medium">Wired Banking Africa</p>
+                            </div>
+                            <div class="text-sm text-zinc-500 mt-2 md:mt-0 md:text-right">
+                                <div>May 2025 - Dec 2025</div>
+                                <div>Full-time · Hybrid</div>
+                                <div class="text-zinc-600">Abuja, Federal Capital Territory, Nigeria</div>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">Laravel development</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">API Development</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">Payment Systems</span>
+                        </div>
+                    </div>
+
+                    <!-- Methic Technology Ltd -->
+                    <div class="glass p-6 rounded-2xl border border-zinc-800/50 hover:border-zinc-700 transition-all">
+                        <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-1">Laravel backend developer</h3>
+                                <p class="text-indigo-400 font-medium">Methic Technology Ltd</p>
+                            </div>
+                            <div class="text-sm text-zinc-500 mt-2 md:mt-0 md:text-right">
+                                <div>Feb 2025 - May 2025</div>
+                                <div>Full-time · Hybrid</div>
+                                <div class="text-zinc-600">Federal Capital Territory, Nigeria</div>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">REST APIs</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">API Development</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">Postman API</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">API Testing</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">Back-End Web Development</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">Database Testing</span>
+                        </div>
+                    </div>
+
+                    <!-- Rosa Mystical Academy -->
+                    <div class="glass p-6 rounded-2xl border border-zinc-800/50 hover:border-zinc-700 transition-all">
+                        <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-1">Network Administrator</h3>
+                                <p class="text-indigo-400 font-medium">Rosa Mystical Academy CBT Center</p>
+                            </div>
+                            <div class="text-sm text-zinc-500 mt-2 md:mt-0 md:text-right">
+                                <div>Feb 2025</div>
+                                <div>Part-time</div>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">Computer Science</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">SQL</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">Cisco Certified</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">Linux</span>
+                        </div>
+                    </div>
+
+                    <!-- Freelance Tutor -->
+                    <div class="glass p-6 rounded-2xl border border-zinc-800/50 hover:border-zinc-700 transition-all">
+                        <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-1">Tutor</h3>
+                                <p class="text-indigo-400 font-medium">Freelance</p>
+                            </div>
+                            <div class="text-sm text-zinc-500 mt-2 md:mt-0 md:text-right">
+                                <div>Jun 2024 - Oct 2024</div>
+                                <div>5 mos</div>
+                            </div>
+                        </div>
+                        <p class="text-zinc-400 text-sm mb-4">Conducted hands-on tutorials in PHP, HTML, and CSS, improving students' practical knowledge. Designed projects and coding exercises to enhance learning outcomes.</p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">HTML</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">Full-Stack Development</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">Computer Science</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">Databases</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">SQL</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">JavaScript</span>
+                        </div>
+                    </div>
+
+                    <!-- Galak Tech -->
+                    <div class="glass p-6 rounded-2xl border border-zinc-800/50 hover:border-zinc-700 transition-all">
+                        <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-1">Network Engineer</h3>
+                                <p class="text-indigo-400 font-medium">Galak Tech</p>
+                            </div>
+                            <div class="text-sm text-zinc-500 mt-2 md:mt-0 md:text-right">
+                                <div>Jan 2019 - Mar 2024</div>
+                                <div>Full-time · On-site</div>
+                                <div class="text-zinc-600">Abuja, Federal Capital Territory, Nigeria</div>
+                            </div>
+                        </div>
+                        <p class="text-zinc-400 text-sm mb-4">Engineered and deployed reliable network solutions for diverse clients. Configured and managed network devices to maintain seamless operations. Diagnosed and resolved network issues, cutting downtime by 30%. Provided comprehensive reports and strategic network recommendations to clients.</p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">Computer Science</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">SQL</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">JavaScript</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">Linux</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">Network Engineering</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">Cisco Networking Devices</span>
+                            <span class="px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 text-xs text-zinc-300">VPN</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="py-24">
         <div class="container mx-auto px-6">
@@ -223,6 +395,24 @@
                                 <div>
                                     <div class="text-xs text-zinc-500 uppercase">WhatsApp</div>
                                     <div class="text-white font-medium">07081114942</div>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/timothy-jehwo-15b12930a/" target="_blank" class="flex items-center space-x-4 group">
+                                <div class="w-12 h-12 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center group-hover:border-blue-500/50 transition-all">
+                                    <svg class="w-5 h-5 text-zinc-500 group-hover:text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-zinc-500 uppercase">LinkedIn</div>
+                                    <div class="text-white font-medium">timothy-jehwo-15b12930a</div>
+                                </div>
+                            </a>
+                            <a href="https://web.facebook.com/profile.php?id=61565551740194" target="_blank" class="flex items-center space-x-4 group">
+                                <div class="w-12 h-12 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center group-hover:border-blue-500/50 transition-all">
+                                    <svg class="w-5 h-5 text-zinc-500 group-hover:text-blue-400" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-zinc-500 uppercase">Facebook</div>
+                                    <div class="text-white font-medium">Timothy Jehwo</div>
                                 </div>
                             </a>
                         </div>
