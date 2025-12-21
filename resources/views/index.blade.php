@@ -91,12 +91,78 @@
                 class="grid grid-cols-2 md:grid-cols-3 gap-8 py-12"
             >
                 @foreach([
-                    ['name' => 'Laravel', 'label' => 'Backend', 'icon' => 'LV', 'color' => 'orange', 'depth' => '98%'],
-                    ['name' => 'Laravel', 'label' => 'Fullstack', 'icon' => 'LW', 'color' => 'pink', 'depth' => '95%'],
-                    ['name' => 'Alpine, Blade, React', 'label' => 'Frontend', 'icon' => 'AJ', 'color' => 'cyan', 'depth' => '92%'],
-                    ['name' => 'Postgres, MySQL, Sqlite', 'label' => 'Database', 'icon' => 'PG', 'color' => 'indigo', 'depth' => '90%'],
-                    ['name' => 'Docker, PHP', 'label' => 'DevOps', 'icon' => 'DK', 'color' => 'blue', 'depth' => '85%'],
-                    ['name' => 'Redis', 'label' => 'Caching', 'icon' => 'RD', 'color' => 'red', 'depth' => '88%'],
+                    [
+                        'name' => 'Laravel', 
+                        'label' => 'Backend', 
+                        'icon' => 'LV', 
+                        'depth' => '98%',
+                        'bg' => 'bg-orange-500/10',
+                        'bg_hover' => 'group-hover:bg-orange-500/20',
+                        'border' => 'border-orange-500/20',
+                        'border_hover' => 'group-hover:border-orange-500/50',
+                        'text' => 'text-orange-400',
+                        'bar' => 'bg-orange-500'
+                    ],
+                    [
+                        'name' => 'Livewire', 
+                        'label' => 'Fullstack', 
+                        'icon' => 'LW', 
+                        'depth' => '95%',
+                        'bg' => 'bg-pink-500/10',
+                        'bg_hover' => 'group-hover:bg-pink-500/20',
+                        'border' => 'border-pink-500/20',
+                        'border_hover' => 'group-hover:border-pink-500/50',
+                        'text' => 'text-pink-400',
+                        'bar' => 'bg-pink-500'
+                    ],
+                    [
+                        'name' => 'Alpine, React', 
+                        'label' => 'Frontend', 
+                        'icon' => 'AJ', 
+                        'depth' => '92%',
+                        'bg' => 'bg-cyan-500/10',
+                        'bg_hover' => 'group-hover:bg-cyan-500/20',
+                        'border' => 'border-cyan-500/20',
+                        'border_hover' => 'group-hover:border-cyan-500/50',
+                        'text' => 'text-cyan-400',
+                        'bar' => 'bg-cyan-500'
+                    ],
+                    [
+                        'name' => 'PostgreSQL', 
+                        'label' => 'Database', 
+                        'icon' => 'PG', 
+                        'depth' => '90%',
+                        'bg' => 'bg-indigo-500/10',
+                        'bg_hover' => 'group-hover:bg-indigo-500/20',
+                        'border' => 'border-indigo-500/20',
+                        'border_hover' => 'group-hover:border-indigo-500/50',
+                        'text' => 'text-indigo-400',
+                        'bar' => 'bg-indigo-500'
+                    ],
+                    [
+                        'name' => 'Docker', 
+                        'label' => 'DevOps', 
+                        'icon' => 'DK', 
+                        'depth' => '85%',
+                        'bg' => 'bg-blue-500/10',
+                        'bg_hover' => 'group-hover:bg-blue-500/20',
+                        'border' => 'border-blue-500/20',
+                        'border_hover' => 'group-hover:border-blue-500/50',
+                        'text' => 'text-blue-400',
+                        'bar' => 'bg-blue-500'
+                    ],
+                    [
+                        'name' => 'Redis', 
+                        'label' => 'Caching', 
+                        'icon' => 'RD', 
+                        'depth' => '88%',
+                        'bg' => 'bg-red-500/10',
+                        'bg_hover' => 'group-hover:bg-red-500/20',
+                        'border' => 'border-red-500/20',
+                        'border_hover' => 'group-hover:border-red-500/50',
+                        'text' => 'text-red-400',
+                        'bar' => 'bg-red-500'
+                    ],
                 ] as $index => $stack)
                 <div 
                     @mouseenter="hovered = {{ $index }}"
@@ -105,22 +171,22 @@
                     :class="hovered === {{ $index }} ? 'scale-105 -translate-y-2' : ''"
                 >
                     <!-- Background Gradient -->
-                    <div class="absolute inset-0 bg-{{ $stack['color'] }}-500/10 group-hover:opacity-20 transition-opacity"></div>
+                    <div class="absolute inset-0 {{ $stack['bg'] }} {{ $stack['bg_hover'] }} transition-colors"></div>
                     
                     <!-- Content -->
-                    <div class="absolute inset-0 flex flex-col items-center justify-center p-6 border border-zinc-800/50 rounded-3xl group-hover:border-zinc-700 transition-colors">
-                        <div class="text-[10px] uppercase tracking-widest text-zinc-500 mb-1 group-hover:text-{{ $stack['color'] }}-400 transition-colors">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-6 border {{ $stack['border'] }} {{ $stack['border_hover'] }} rounded-3xl transition-colors">
+                        <div class="text-[10px] uppercase tracking-widest text-zinc-500 mb-1 group-hover:text-white transition-colors">
                             {{ $stack['label'] }}
                         </div>
-                        <span class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-{{ $stack['color'] }}-400 to-{{ $stack['color'] }}-700 mb-1">
+                        <span class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-white to-white/50 mb-1">
                             {{ $stack['icon'] }}
                         </span>
-                        <span class="text-zinc-400 text-[10px] font-medium group-hover:text-white transition-colors text-center">{{ $stack['name'] }}</span>
+                        <span class="text-white text-[10px] font-bold group-hover:text-white transition-colors text-center">{{ $stack['name'] }}</span>
                         
                         <!-- Mastery Bar -->
-                        <div class="w-full h-0.5 bg-zinc-900 rounded-full mt-3 overflow-hidden">
+                        <div class="w-full h-0.5 bg-zinc-900/50 rounded-full mt-3 overflow-hidden">
                             <div 
-                                class="h-full bg-{{ $stack['color'] }}-500 transition-all duration-1000 ease-out"
+                                class="h-full {{ $stack['bar'] }} transition-all duration-1000 ease-out"
                                 :style="hovered === {{ $index }} ? 'width: {{ $stack['depth'] }}' : 'width: 0%'"
                             ></div>
                         </div>
