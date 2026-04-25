@@ -72,7 +72,7 @@
                 <div class="relative">
                     <div class="aspect-square rounded-3xl overflow-hidden glass p-1">
                         <div class="w-full h-full bg-zinc-900 rounded-[22px] overflow-hidden border border-zinc-800">
-                             <img src="{{ asset('build/image/royalty.png') }}" alt="Timothy Jehwo Oghenero" class="w-full h-full object-cover">
+                             <img src="{{ asset('images/royal_office.png') }}" alt="Timothy Jehwo Oghenero" class="w-full h-full object-cover">
                         </div>
                     </div>
                     <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-indigo-600/20 rounded-full blur-3xl"></div>
