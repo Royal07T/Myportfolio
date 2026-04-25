@@ -92,7 +92,7 @@
             >
                 @foreach([
                     [
-                        'name' => 'Laravel', 
+                        'name' => 'Laravel,symfony,codeigniter',
                         'label' => 'Backend', 
                         'icon' => 'LV', 
                         'depth' => '98%',
@@ -104,7 +104,7 @@
                         'bar' => 'bg-orange-500'
                     ],
                     [
-                        'name' => 'Livewire', 
+                        'name' => 'laravel,livewire, vue,alpine, blade, tailwind,react.js,etc.',
                         'label' => 'Fullstack', 
                         'icon' => 'LW', 
                         'depth' => '95%',
@@ -116,7 +116,7 @@
                         'bar' => 'bg-pink-500'
                     ],
                     [
-                        'name' => 'Alpine, React', 
+                        'name' => 'Alpine, React, Vue, etc.', 
                         'label' => 'Frontend', 
                         'icon' => 'AJ', 
                         'depth' => '92%',
@@ -128,7 +128,7 @@
                         'bar' => 'bg-cyan-500'
                     ],
                     [
-                        'name' => 'PostgreSQL', 
+                        'name' => 'PostgreSQL,mysql,nosql',
                         'label' => 'Database', 
                         'icon' => 'PG', 
                         'depth' => '90%',
@@ -140,7 +140,7 @@
                         'bar' => 'bg-indigo-500'
                     ],
                     [
-                        'name' => 'Docker', 
+                        'name' => 'Kubernetes, CI/CD, Git, Github, Gitlab, etc.', 
                         'label' => 'DevOps', 
                         'icon' => 'DK', 
                         'depth' => '85%',
@@ -175,13 +175,13 @@
                     
                     <!-- Content -->
                     <div class="absolute inset-0 flex flex-col items-center justify-center p-6 border {{ $stack['border'] }} {{ $stack['border_hover'] }} rounded-3xl transition-colors">
-                        <div class="text-[10px] uppercase tracking-widest text-zinc-500 mb-1 group-hover:text-white transition-colors">
+                        <div class="text-xs font-semibold uppercase tracking-wider text-zinc-200 mb-1 group-hover:text-white transition-colors">
                             {{ $stack['label'] }}
                         </div>
                         <span class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-br from-white to-white/50 mb-1">
                             {{ $stack['icon'] }}
                         </span>
-                        <span class="text-white text-[10px] font-bold group-hover:text-white transition-colors text-center">{{ $stack['name'] }}</span>
+                        <span class="text-zinc-100 text-xs font-extrabold leading-tight group-hover:text-white transition-colors text-center">{{ $stack['name'] }}</span>
                         
                         <!-- Mastery Bar -->
                         <div class="w-full h-0.5 bg-zinc-900/50 rounded-full mt-3 overflow-hidden">
@@ -272,7 +272,7 @@
             class="container mx-auto px-6 transition-all duration-1000 transform"
             :class="visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'"
         >
-            <div class="max-w-4xl mx-auto">
+            <div class="w-full max-w-none">
                 <h2 class="text-3xl font-bold mb-16 text-center outfit reveal-heading" :class="visible ? 'active' : ''">Work Experience</h2>
                 
                 <div class="space-y-6">
